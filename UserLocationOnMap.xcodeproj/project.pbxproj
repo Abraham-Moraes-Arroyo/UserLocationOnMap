@@ -14,6 +14,7 @@
 		8513D3562B8FB9B700D2B718 /* UserLocationOnMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513D3552B8FB9B700D2B718 /* UserLocationOnMapTests.swift */; };
 		8513D3602B8FB9B700D2B718 /* UserLocationOnMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513D35F2B8FB9B700D2B718 /* UserLocationOnMapUITests.swift */; };
 		8513D3622B8FB9B700D2B718 /* UserLocationOnMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513D3612B8FB9B700D2B718 /* UserLocationOnMapUITestsLaunchTests.swift */; };
+		8513D3832B90BF8F00D2B718 /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513D3822B90BF8F00D2B718 /* locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8513D35B2B8FB9B700D2B718 /* UserLocationOnMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserLocationOnMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8513D35F2B8FB9B700D2B718 /* UserLocationOnMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationOnMapUITests.swift; sourceTree = "<group>"; };
 		8513D3612B8FB9B700D2B718 /* UserLocationOnMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationOnMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8513D3822B90BF8F00D2B718 /* locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				8513D3442B8FB9B400D2B718 /* UserLocationOnMapApp.swift */,
 				8513D3462B8FB9B400D2B718 /* ContentView.swift */,
+				8513D3822B90BF8F00D2B718 /* locations.swift */,
 				8513D3482B8FB9B700D2B718 /* Assets.xcassets */,
 				8513D34A2B8FB9B700D2B718 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8513D3472B8FB9B400D2B718 /* ContentView.swift in Sources */,
+				8513D3832B90BF8F00D2B718 /* locations.swift in Sources */,
 				8513D3452B8FB9B400D2B718 /* UserLocationOnMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
