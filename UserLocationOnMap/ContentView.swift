@@ -13,22 +13,28 @@ struct ContentView: View {
     @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
     
     var body: some View {
-        Map(position: $position) {
+        MapReader{ proxy in
+            Map(position: $position) {
+                
+                
+            }
+//            this is to get the coordinates of the user, based on where they tap on.
+            .onTapGesture { location in
+                if let coordinate = proxy.convert(location, from: .local ){
+                    print("Tapped at \(coordinate)")
+                }
+                
+            }
+            .mapControls {
+                MapUserLocationButton()
+                MapPitchToggle()
+            }
             
-            
+              .onAppear(){
+                  CLLocationManager().requestWhenInUseAuthorization()
+              }
         }
-        .mapControls {
-            MapUserLocationButton()
-            MapPitchToggle()
-        }
-        .onAppear(){
-            CLLocationManager().requestWhenInUseAuthorization()
-        }
-        // this part is going to help us add markers as we tap on the map. 
-        .onTapGesture { location in
-            print("Tapped at \(location)")
-            
-        }
+      
     }
 }
 
