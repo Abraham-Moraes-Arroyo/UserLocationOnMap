@@ -24,6 +24,11 @@ struct ContentView: View {
         .onAppear(){
             CLLocationManager().requestWhenInUseAuthorization()
         }
+        // this part is going to help us add markers as we tap on the map. 
+        .onTapGesture { location in
+            print("Tapped at \(location)")
+            
+        }
     }
 }
 
